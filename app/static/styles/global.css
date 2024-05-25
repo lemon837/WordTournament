@@ -1,0 +1,89 @@
+.navbar {
+  background-color: darkgrey;
+}
+
+#clear-word {
+  background-color: black;
+}
+
+#game {
+  font-weight: 600;
+}
+
+.container {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 50px);
+  grid-gap: 5px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.grid div {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 0px solid #ccc;
+  border-radius: 100px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.grid .selected {
+  background-color: gold;
+}
+
+.grid .correct {
+  background-color: lightgreen;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+#word-input {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+.words-list {
+  margin-top: 10px;
+}
+
+.words-list div {
+  margin: 5px 0;
+}
+
+.game-btn {
+display: inline-block;
+outline: 0;
+cursor: pointer;
+border: 2px solid #000;
+border-radius: 3px;
+color: #000;
+background: #fff;
+font-size: 15px;
+font-weight: 600;
+line-height: 28px;
+padding: 6px 10px;
+margin: 20px;
+text-align:center;
+transition-duration: .15s;
+transition-property: all;
+transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+.game-btn:hover {
+    background: rgb(251, 193, 245);
+}
